@@ -1,0 +1,197 @@
+/* 
+Fuentes de Acid Labs en Website: 
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,500i,900');
+
+body{
+  margin:0px;
+  padding:0px;
+  min-height: 100%;
+  background-color:#1a1c75;
+  background-image: url(../images/gradient-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-weight: 500;
+}
+.contenedor{
+  height:500px;
+  width: 960px;
+  background-color:white;
+  border-radius:5px;
+  margin:auto;
+  display:flex;
+  overflow: hidden;
+  margin-top:60px;
+  -webkit-box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.2);
+  box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.2);
+}
+.imagen-estado{
+  width:550px;
+  background-color:#f2f2f2;
+}
+.imagen-estado img{
+  -webkit-transition: opacity 500ms linear;
+  -ms-transition: opacity 500ms linear;
+  transition: opacity 500ms linear;
+}
+.formulario{
+  width:310px;
+  padding:80px 50px;
+  text-align: center;
+}
+.formulario h2{
+  font-weight: 500;
+  margin-bottom:40px;
+}
+.campo{
+  position: relative;
+}
+.campo .icono{
+  position: absolute;
+  left:22px;
+  top:14px;
+}
+.campo-mail .icono{
+  top:15px;
+}
+input,button{
+  border-radius:25px;
+  background-color:#e5e5e5;
+  border:1px solid transparent;
+  color:#999999;
+  font-size:16px;
+  padding-left:60px;
+  height: 51px;
+  width:100%;
+  margin-bottom:30px;
+  box-sizing: border-box;
+  transition: background-color 1000ms linear;
+  font-family: 'Poppins', 'Arial', sans-serif;
+}
+input:focus{
+  outline: none;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+.green{
+  color:#32ac41;
+}
+button{
+  background-color:#32ac41;
+  color:white;
+  padding: 0px;
+  opacity: 1;
+  -webkit-transition: opacity 500ms linear;
+  -ms-transition: opacity 500ms linear;
+  transition: opacity 500ms linear;
+}
+button:disabled{
+  opacity: 0.2;
+  -webkit-transition: opacity 500ms linear;
+  -ms-transition: opacity 500ms linear;
+  transition: opacity 500ms linear;
+}
+button:hover{
+  background-color:#278b33;
+  cursor: pointer
+}
+button:disabled:hover{
+  cursor: inherit;
+}
+.error{
+  border:2px solid red;
+  background-color:white;
+}
+.valid{
+  border:2px solid green;
+  background-color:white;
+  background-image: url(../images/valid.svg);
+  background-position: top 15px right 10px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding-right:35px;
+}
+.errorMessage{
+  position: relative;
+  top: -24px;
+  display:block;
+  line-height: 20px;
+  font-size: 14px;
+  color:red
+}
+.errorMessage img{
+  display: inline-block;
+  margin-right: 10px;
+}
+.errorMessage span{
+  margin-top: -10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.align-left{
+  text-align: left;
+}
+
+.formulario-enviado .formulario{
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.formulario-enviado .box-datos{
+  border:1px solid #ddd;
+  padding:0px;
+  border-radius:2px;
+  font-size:14px;
+  margin-bottom:10px;
+}
+.formulario-enviado .box-datos p{
+  font-size:14px;
+  padding:0px 10px;
+}
+.formulario-enviado .box-datos ul{
+  margin:0px;
+  padding:0px;
+  background-color:#f2f2f2;
+  text-align: left;
+  padding:6px;
+}
+.formulario-enviado .box-datos ul li{
+  list-style: none;
+  padding: 6px;
+  color:#777;
+}
+.formulario-enviado h2{
+  font-weight: bold;
+}
+.formulario-enviado small{
+  color:#ccc;
+}
+.formulario-enviado .credits{
+  font-size:13px;
+  margin-bottom:0px;
+}
